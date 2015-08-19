@@ -11,9 +11,15 @@ from riotwatcher import RiotWatcher, NORTH_AMERICA, BRAZIL, EUROPE_NORDIC_EAST, 
   KOREA, LATIN_AMERICA_NORTH, LATIN_AMERICA_SOUTH, NORTH_AMERICA, OCEANIA, RUSSIA, TURKEY
 from riotwatcher import LoLException
 
+##############################################################################
+#You need to define these two variables before running the script            #
+#key   : Riot developer API key, get it from https://developer.riotgames.com/#
+#region: Region the match comes from										 #
+##############################################################################
 key = "d6d2296a-434a-4084-b4ee-c2d8347f41a6"
+region = NORTH_AMERICA
 
-w = RiotWatcher(key, NORTH_AMERICA)
+w = RiotWatcher(key, region)
 match_array = []
 
 def wait():
